@@ -263,13 +263,13 @@ namespace Game2
                     message = "Вы видите врага";
                     List<string> enemyImage = new List<string>() //Картинка врага в интерфейсе
                     {
-                        "XXXXXXXXXXXXXXX",
-                        "XXXXXXXXXXXXXXX",
-                        "XXXXXXXXXXXXXXX",
-                        "XXXXXXXXXXXXXXX",
-                        "XXXXXXXXXXXXXXX",
-                        "XXXXXXXXXXXXXXX",
-                        "XXXXXXXXXXXXXXX"
+                        "█             █",
+                        "██           ██",
+                        "███████████████",
+                        "██   █████   ██",
+                        "███████████████",
+                        " █████████████ ",
+                        "   █████████   "
                     };
 
                     DrawInterface(enemyImage, player, 1, message); //Рисуем интерфейс. Картинка врага-Игрок-Тип 1(Обычный)-Сообщение
