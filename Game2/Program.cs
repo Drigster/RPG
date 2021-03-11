@@ -222,7 +222,7 @@ namespace Game2
 
             if (player.StepsUntllEvent == player.StepsFromLastEvent) //Вычисляем равны ли шаги количеству шагов до события
             {
-                if (rnd.Next(1, 3) == 1) //Магазин. Шанс 1 из 3
+                if (rnd.Next(1, 6) == 1) //Магазин. Шанс 1 из 6
                 {
                     Shop shop = new Shop();
 
