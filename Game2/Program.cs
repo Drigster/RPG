@@ -129,7 +129,7 @@ namespace Game2
             ConsoleKeyInfo action;
             string message = "Вы начли игру";
 
-            Player player = new Player(100, 0, 0); //Создаём персонажа. Жизни-Броня-Урон-Монеты
+            Player player = new Player(100, 0, 3); //Создаём персонажа. Жизни-Броня-Урон-Монеты
 
             List<string> menu = new List<string>
             {
@@ -209,6 +209,7 @@ namespace Game2
                $"Вы прошли: {player.Steps} шагов, ваши координаты: X = {player.Position.X} Y = {player.Position.Y}"
             };
 
+            Console.Clear();
             for (int i = 0; i < gameOverMenu.Count; i++) //Информация после выхода или проигрыша
             {
                 Console.WriteLine(gameOverMenu[i]);
