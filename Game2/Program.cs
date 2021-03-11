@@ -7,7 +7,7 @@ using System;
 using System.Numerics;
 using System.Collections.Generic;
 
-namespace Game2
+namespace RPG
 {
     public class Character //Персонаж
     {
