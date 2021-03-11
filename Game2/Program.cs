@@ -197,7 +197,22 @@ namespace Game2
 
             } while (action.Key != ConsoleKey.Escape && player.IsAlive); //Выход при нажатии кнопки ESC
 
-            Console.WriteLine($"Вы прошли: {player.Steps} шагов, ваши координаты: X = {player.Position.X} Y = {player.Position.Y}"); //Информация после выхода или проигрыша
+            List<string> gameOverMenu = new List<string>
+            {
+                "       _____                         ____                      ",
+                "      / ____|                       / __ \\                     ",
+                "     | |  __  __ _ _ __ ___   ___  | |  | |_   _____ _ __      ",
+                "     | | |_ |/ _` | '_ ` _ \\ / _ \\ | |  | \\ \\ / / _ \\ '__|     ",
+                "     | |__| | (_| | | | | | |  __/ | |__| |\\ V /  __/ |        ",
+                "      \\_____|\\__,_|_| |_| |_|\\___|  \\____/  \\_/ \\___|_|        ",
+                "                                                               ",
+               $"Вы прошли: {player.Steps} шагов, ваши координаты: X = {player.Position.X} Y = {player.Position.Y}"
+            };
+
+            for (int i = 0; i < gameOverMenu.Count; i++) //Информация после выхода или проигрыша
+            {
+                Console.WriteLine(gameOverMenu[i]);
+            }
         }
 
         public static string TryGenerateEvent(Player player) //Попытка создать интерфейс. Игрок
