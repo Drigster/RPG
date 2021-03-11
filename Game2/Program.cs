@@ -347,8 +347,6 @@ namespace Game2
 
         public static void DrawInterface(List<string> image, Player player, int type, string message = null, Shop shop = null, Enemy enemy = null) //Рисуем интерфейс. Картинка-Игрок-Тип интерфейса(1-обычный, 2-магазин, 3-бой)-Сообщение-Магазин-Враг
         {
-            Console.ForegroundColor = ConsoleColor.Cyan;
-
             if (type == 1)//Стандартный интерфейс
             {
                 List<string> hint = new List<string>() //Нижняя панель(подсказка)
@@ -378,7 +376,7 @@ namespace Game2
                 for (int i = 0; i < image.Count; i++) //Рисуем верхнюю часть
                 {
                     string line = indent + image[i] + info[i]; //Соеденияем отступ, строку картинки(по индексу строки) и строку информации
-                    Console.WriteLine(line, Console.ForegroundColor); //Рисуем верхнюю часть по строчно
+                    Console.WriteLine(line); //Рисуем верхнюю часть по строчно
                 }
 
                 for (int i = 0; i < hint.Count; i++) //Рисуем нижнюю часть
